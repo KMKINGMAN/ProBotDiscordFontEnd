@@ -1,0 +1,50 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .tw-max-w\[200px\] {
+    max-width: 200px;
+  }
+  .tw-rounded-\[5px\] {
+    border-radius: 5px;
+  }
+  .tw-px-\[20px\] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@layer components {
+  .tw-btn {
+    @apply tw-rounded-[5px] tw-border-0 tw-bg-grey-3 tw-px-5 tw-py-3 tw-text-center tw-font-medium tw-text-white tw-outline-none tw-transition-colors
+      tw-duration-200 tw-ease-in-out first-letter:tw-uppercase hover:tw-bg-grey-2;
+  }
+  .tw-btn-primary {
+    @apply tw-btn;
+    @apply tw-bg-purple-main hover:tw-bg-purple-hover;
+  }
+  .tw-btn-sec {
+    @apply tw-btn;
+    @apply tw-bg-grey-2 hover:tw-bg-grey-1;
+  }
+  .tw-btn-danger {
+    @apply tw-btn;
+    @apply tw-bg-[#ED4C5C] hover:tw-bg-[#d03747];
+  }
+  .tw-double-input {
+    @apply tw-flex tw-w-full tw-flex-wrap tw-justify-between tw-gap-2;
+    /* .tw-input-container {
+      flex: 1 1 250px;
+    } */
+  }
+  .tw-btn-icon {
+    @apply tw-flex tw-items-center tw-justify-center tw-gap-3;
+  }
+  .tw-btn-icon:disabled {
+    @apply tw-opacity-50;
+  }
+  .tw-btn-icon:disabled:hover {
+    @apply tw-bg-purple-main;
+  }
+}

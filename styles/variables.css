@@ -1,1 +1,33 @@
-// extracted by mini-css-extract-plugin
+:root {
+  --purple: #5865f2;
+  --hover-purple: #344099;
+  --hover-purple-low-opacity: rgba(88, 101, 242, 0.24);
+  --white: #ffffff;
+  --skeleton: #434350ab;
+  --command-bg: #25252c;
+  --text-color: #a5a5a8;
+  --gray-0: #919198;
+  --gray-1: #434350;
+  --gray-2: #393943;
+  --gray-3: #292930;
+  --gray-3-4: #2c2c35;
+  --gray-4: #1f1f25;
+  --gray-5: #0c0c0f;
+  --red: #ed4c5c;
+  --orange: #f29358;
+  --hover-red: #ed4c5c27;
+  --pink: #eb459e;
+  --pink-code: #ff50b9;
+  --hover-pink: #f742aa42;
+  --pink-labeltag: #4b0d32;
+  --yellow: #fee75c;
+  --green: #09a34f;
+  --green-hover: #067437;
+  --light-green: #42ffa7;
+  --light-green-hover: #2cb274;
+  --dark-green: #163828;
+  --hover-gray-1: #70707c;
+  --landing-bg: #131b21;
+
+  --r-onboarding-step-arrow-size: 14px;
+}
