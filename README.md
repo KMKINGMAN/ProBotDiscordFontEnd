@@ -1,5 +1,5 @@
 # ProBot.io Discord bot frontend
-### Note: need to setup next js and make a package.json file
+### Note: need to setup next js and tailwaind css 
 This is a frontend for the ProBot.io Discord bot. It is built with React and Next.js, and it allows you to manage your ProBot server settings and features from within your browser.
 
 Requirements:
