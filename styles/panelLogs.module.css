@@ -1,2 +1,90 @@
-// extracted by mini-css-extract-plugin
-module.exports = {"container":"panelLogs_container__4dHf1","head":"panelLogs_head__JgFe1","row":"panelLogs_row__32_F6","row-action":"panelLogs_row-action__GO8C5","user-info":"panelLogs_user-info__mG_7W"};
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .head {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--gray-4);
+    color: var(--text-color);
+    padding: 2rem 4rem;
+    border-radius: 13px 13px 0 0;
+    font-weight: 700;
+    position: relative;
+  }
+  .head > div {
+    text-align: center;
+  }
+  .head > div:first-child {
+    left: 60px;
+    width: 100px;
+    justify-content: flex-start;
+  }
+  .head > div:nth-child(2) {
+    left: 39%;
+    width: 200px;
+  }
+  .head > div:nth-child(3) {
+    left: 65%;
+    width: 100px;
+  }
+  
+  .row {
+    align-items: center;
+    border-bottom: 4px solid var(--gray-3);
+    background-color: var(--command-bg);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .row-action i {
+    margin-inline-start: 1rem;
+    color: var(--purple);
+  }
+  .user-info {
+    padding-top: 1.5rem;
+    display: flex;
+  }
+  .user-info p {
+    margin: 0;
+    word-break: break-word;
+    width: 200px;
+  }
+  .user-info p:last-child {
+    opacity: 0.5;
+  }
+  .user-info img {
+    margin-inline-end: 1rem;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+  }
+  /* @media screen and (max-width: 650px) {
+    .row-date,
+    .head > div:last-child {
+      display: none;
+    }
+    .row-action {
+      font-size: 1rem;
+      overflow: hidden;
+      max-width: 150px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .username_d {
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+    .user_id {
+      font-size: 10px;
+    }
+    .head {
+      padding: 2rem;
+    }
+    .user-info img {
+      width: 35px;
+      height: 35px;
+    }
+  } */
+  

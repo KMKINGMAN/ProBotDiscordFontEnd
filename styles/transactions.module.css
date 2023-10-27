@@ -1,2 +1,94 @@
-// extracted by mini-css-extract-plugin
-module.exports = {"container":"transactions_container__E67JK","user":"transactions_user__NkBQY","user-balance":"transactions_user-balance__9IhCi","user-info":"transactions_user-info__lW_MB","user-credits":"transactions_user-credits__tevdX","user-date":"transactions_user-date__zoRT0","table":"transactions_table__Ge1Ih","head":"transactions_head__u6q1O","border-bottom":"transactions_border-bottom__2NUQP"};
+#container {
+    overflow: auto;
+    border-radius: 20px;
+    border: 1px solid var(--gray-2) !important;
+  }
+  .user {
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+  }
+  .user-balance {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .user-balance img {
+    margin-inline-start: 10px;
+  }
+  .user-info {
+    width: 300px;
+    align-items: center;
+    display: flex;
+    padding-inline-start: 2rem;
+    padding-inline-end: 20px;
+  }
+  .user-info p {
+    gap: 5px;
+    margin: 0;
+    unicode-bidi: plaintext;
+    display: flex;
+    direction: ltr;
+  }
+  .user-info img {
+    user-select: none;
+    pointer-events: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .user-credits p {
+    margin: 0;
+    display: flex;
+  }
+  
+  .user-date, .user-credits, .user-balance {
+    width: 200px;
+  }
+  
+  .table {
+    width: 100%;
+  }
+  
+  .head {
+    height: 60px;
+    background-color: var(--gray-2);
+    margin-inline-start: 1rem;
+  }
+  .head > th:first-child {
+    padding-inline-start: 2.5rem;
+  }
+  #container *:not(.border-bottom) { 
+    border: 0 !important;
+  }
+  .border-bottom {
+    border-bottom: 1px solid #393943 !important;
+  }
+  
+  /* media queries */
+  
+  @media screen and (max-width: 768px) {
+    .user-info p {
+      font-size: 13px;
+      overflow: hidden;
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  
+  @media screen and (max-width: 376px) {
+    #container {
+      font-size: 10px;
+    }
+    .user-credits p {
+      font-size: 10px;
+    }
+    .user-balance img {
+      width: 8px;
+      height: 5px;
+    }
+  }
+  

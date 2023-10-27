@@ -1,2 +1,51 @@
-// extracted by mini-css-extract-plugin
-module.exports = {"logs_component":"logs_logs_component__iOBdX","continuer":"logs_continuer___lAmM","heder":"logs_heder__gSwA2","select":"logs_select__mG74n","color-bicker__continuer":"logs_color-bicker__continuer__oztBs","color_picker":"logs_color_picker__xA3oU"};
+.logs_component {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  .continuer {
+    width: 334.67px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--command-bg);
+    border-radius: 24px;
+    padding: 2rem;
+  }
+  .heder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heder h3 {
+    font-size: 18px;
+    margin: 0;
+    margin-inline-end: 1rem;
+  }
+  .select {
+    margin-top: 2rem;
+  }
+  .color-bicker__continuer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .color_picker {
+    width: 100%;
+    height: 41px;
+    border-radius: 12px;
+    background-color: #000;
+    padding: 1rem;
+  }
+  
+  @media screen and (max-width: 769px) {
+    .continuer {
+      width: 47%;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .continuer {
+      width: 100%;
+    }
+  }
+  

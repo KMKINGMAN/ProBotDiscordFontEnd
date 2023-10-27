@@ -1,2 +1,237 @@
-// extracted by mini-css-extract-plugin
-module.exports = {"container":"styles_container__M124P","singleRow_container":"styles_singleRow_container__qbbtp","header":"styles_header__gVaNm","review":"styles_review__qsAaX","actions":"styles_actions__Z02bz","button_review":"styles_button_review__pC6Z9","edit_container":"styles_edit_container__X0NzK","hr":"styles_hr__2SoI5","emoji-picker":"styles_emoji-picker__PF_OX","remove_emoji":"styles_remove_emoji__4tDgr","selected_emoji":"styles_selected_emoji__8QUFm","add_emoji_button":"styles_add_emoji_button__ytvHE","edit_body":"styles_edit_body__IhELu","edit_colors":"styles_edit_colors__nNloI","button_color__active":"styles_button_color__active__q9wvs","emoji-picker-children":"styles_emoji-picker-children__Ey86R","mobile__actions":"styles_mobile__actions__s17NU","emoji-picker-container":"styles_emoji-picker-container___jV10","rolesList":"styles_rolesList__g0dWS"};
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 20px;
+  }
+  .container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .singleRow_container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .singleRow_container > div {
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--gray-3);
+  }
+  .singleRow_container .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 10px;
+  }
+  .singleRow_container .header > div:first-child {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 120px;
+  }
+  .singleRow_container .header h5 {
+    margin: 0;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+  }
+  .actions button {
+    background-color: unset;
+    border: unset;
+  }
+  .button_review {
+    text-transform: unset !important;
+    border-radius: 4px;
+    min-width: 120px;
+    min-height: 37px;
+  
+    gap: 0.3rem;
+    padding: 0.375rem 0.45rem !important;
+  }
+  .button_review p {
+    color: var(--white);
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 70px;
+    text-overflow: ellipsis;
+    padding-top: 1px;
+  
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  .edit_container {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hr {
+    opacity: 1;
+    margin: 0;
+    background: var(--gray-2);
+    border-color: var(--gray-2);
+  }
+  .emoji-picker {
+    position: relative;
+  }
+  .remove_emoji {
+    z-index: 1;
+    position: absolute;
+    padding: 0;
+    background: unset;
+    border: unset;
+    top: -5px;
+    left: -5px;
+    backdrop-filter: blur(0.7px);
+    border-radius: 50%;
+    background-color: #f0484726;
+    color: #b71c1c;
+    font-size: 13px;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-content: center;
+  }
+  .selected_emoji {
+    position: relative;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: var(--gray-2);
+    border-radius: 50%;
+    border: 1px solid var(--gray-1);
+  }
+  .selected_emoji i {
+    position: absolute;
+    bottom: -11px;
+    right: -11px;
+    backdrop-filter: blur(1px);
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #43435047;
+    font-size: 10px;
+  }
+  .add_emoji_button {
+    background: unset;
+    border: unset;
+  }
+  .edit_body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .edit_colors {
+    flex: 1 1 200px;
+  }
+  .edit_colors > div {
+    display: flex;
+    align-items: center;
+    border-radius: 11px;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid var(--gray-1);
+    height: 42px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .edit_colors label:hover + .edit_colors > div,
+  .edit_colors > div:hover {
+    border: 1px solid var(--purple) !important;
+  }
+  .edit_colors button {
+    position: relative;
+    background-color: unset;
+    border: 0;
+    border-radius: 10px;
+    width: 28px;
+    height: 28px;
+    transition: all 0.2s ease 0s;
+  }
+  .edit_colors button span {
+    width: 15px;
+    height: 15.5px;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+  
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease 0s;
+  }
+  .edit_colors button.button_color__active {
+    border: 2px solid;
+  }
+  .emoji-picker-children {
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    background-color: var(--gray-2);
+    border: 1px solid var(--gray-1);
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .mobile__actions {
+    display: none;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 768px) {
+    .emoji-picker-container {
+      margin-top: 3rem;
+      position: absolute;
+      width: 400px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .review {
+      border-bottom: 1px solid var(--gray-1);
+      padding-bottom: 1rem;
+      gap: 1rem;
+      max-width: unset;
+      flex-wrap: wrap;
+    }
+    .rolesList {
+      width: 100%;
+      margin: 0;
+    }
+    .header {
+      flex-direction: column;
+    }
+    .rolesList {
+      max-width: unset;
+    }
+    .singleRow_container .header > div:first-child {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .edit_colors {
+      width: 140px !important;
+    }
+    .mobile__actions {
+      display: flex;
+    }
+    .actions {
+      display: none;
+    }
+  }
+  

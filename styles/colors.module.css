@@ -1,2 +1,34 @@
-// extracted by mini-css-extract-plugin
-module.exports = {"row":"colors_row__NXFIg","upload":"colors_upload__NQFH8","background-select":"colors_background-select__OmKIh"};
+.row {
+    display: flex;
+  }
+  .row > * {
+    width: 50%;
+  }
+  .row > div:last-child {
+    margin-inline-start: 1rem;
+  }
+  .upload {
+    width: 100%;
+  }
+  #background-select {
+    margin-inline-start: 0;
+  }
+  @media screen and (max-width: 769px) {
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+    .row > * {
+      width: 100%;
+    }
+    .row > div:last-child {
+      margin-inline-start: 0;
+    }
+    .row > div {
+      margin-top: 10px;
+    }
+    .row:first-child > div:first-child {
+      margin-top: 0;
+    }
+  }
+  

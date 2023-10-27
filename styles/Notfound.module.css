@@ -1,2 +1,32 @@
-// extracted by mini-css-extract-plugin
-module.exports = {"container":"Notfound_container___vm_Q","not-found-img":"Notfound_not-found-img__st0se","not-found-button":"Notfound_not-found-button__M59dr"};
+.container {
+    text-align: center;
+  }
+  
+  .not-found-img {
+    margin-top: 100px;
+    width: 40%;
+    user-select: none;
+    pointer-events: none;
+  }
+  
+  .not-found-button {
+    border: none;
+    background-color: var(--purple);
+    padding: 9px 30px;
+    color: var(--white);
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  
+  .not-found-button:hover {
+    filter: drop-shadow(4px 4px 120px var(--hover-purple));
+    transition: all 0.3s;
+  }
+  @media screen and (max-width: 768px) {
+    .not-found-img {
+      width: 100%;
+    }
+  }
+  

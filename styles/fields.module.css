@@ -1,2 +1,77 @@
-// extracted by mini-css-extract-plugin
-module.exports = {"outlinedInput":"fields_outlinedInput__jGZEp","filled-select-input":"fields_filled-select-input__ZrP9K","filled-input":"fields_filled-input__jCTkb","textarea-Outlined":"fields_textarea-Outlined__rmEWy","counting-input":"fields_counting-input__A6ZeZ","counting-input__footer":"fields_counting-input__footer__4WVWQ"};
+.outlinedInput,
+.filled-select-input {
+  display: flex;
+  flex-direction: column;
+}
+.outlinedInput input {
+  outline: none;
+  background-color: transparent;
+  padding: 10px 15px;
+  border: 1px solid #434350;
+  border-radius: 12px;
+}
+.filled-select-input select {
+  border-radius: 13px;
+}
+.filled-select-input select > option {
+  border-radius: 13px !important;
+  width: 2000px;
+  margin: 10px;
+}
+.filled-input {
+  border: none;
+  outline: none;
+  padding: 12px 16px 12px 16px;
+  border-radius: 12px;
+  background-color: var(--purple);
+}
+.filled-input:hover {
+  opacity: 0.8;
+}
+.textarea-Outlined {
+  display: flex;
+  flex-direction: column;
+}
+.textarea-Outlined textarea {
+  padding: 1rem;
+  outline: none;
+  resize: vertical;
+  width: 100% !important;
+  background-color: transparent;
+  border-radius: 12px;
+  border: 1px solid #434350;
+}
+.counting-input {
+  width: 151.33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid var(--gray-1);
+  border-radius: 12px;
+  font-size: 14px;
+}
+.counting-input button {
+  background-color: var(--gray-1);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  min-width: 33px;
+  min-height: 33px;
+  font-size: 1rem;
+  align-items: center;
+  border: none;
+}
+.counting-input input {
+  width: 90%;
+  background: transparent;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+.counting-input__footer {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  margin: 0;
+  margin-top: 5px;
+}
